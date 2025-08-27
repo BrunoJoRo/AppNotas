@@ -1,0 +1,25 @@
+{
+    "name":"AppNotas",
+    "Short_name": "Notas",
+    "description":"Aplicativo feito para controle de notas",
+    "start_url": "https://brunojoro.github.io/AppNotas/",
+    "background_color":"white",
+    "theme_color": "#ddd",
+    "scope":"https://brunojoro.github.io/AppNotas/",
+    "display":"Standalone",
+    "icons":[
+        {
+            "src":"img/logo.png",
+            "sizes":"50x50"
+        }
+    ],
+    "lang":"pt-br",
+    "dir":"auto",
+    "categories":[
+        "education",
+        "adm"
+    ],
+      "id":"pwa_teste",
+    "orientation":"any"
+
+}
