@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #7f8c8d;
+}
+
+.input-area {
+    margin-bottom: 25px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#tituloNota, #textoNota {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#textoNota {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#adicionarBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#adicionarBtn:hover {
+    background-color: #2980b9;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.filtro-btn {
+    padding: 8px 16px;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filtro-btn.ativo {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+.lista-notas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.nota {
+    background-color: #fff;
+    border-left: 4px solid #3498db;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.nota:hover {
+    transform: translateY(-3px);
+}
+
+.nota.importante {
+    border-left-color: #e74c3c;
+}
+
+.nota-titulo {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.nota-texto {
+    color: #34495e;
+    margin-bottom: 15px;
+    word-break: break-word;
+}
+
+.nota-data {
+    font-size: 12px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.nota-acoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nota-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.importante-btn {
+    background-color: #ecf0f1;
+    color: #7f8c8d;
+}
+
+.importante-btn.ativo {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.remover-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .lista-notas {
+        grid-template-columns: 1fr;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo de Notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Minhas Notas</h1>
+            <p>Um aplicativo simples para gerenciar suas notas</p>
+        </header>
+        
+        <div class="input-area">
+            <input type="text" id="tituloNota" placeholder="Título da nota">
+            <textarea id="textoNota" placeholder="Digite sua nota aqui..."></textarea>
+            <button id="adicionarBtn">Adicionar Nota</button>
+        </div>
+        
+        <div class="filtros">
+            <button class="filtro-btn ativo" data-filtro="todas">Todas</button>
+            <button class="filtro-btn" data-filtro="importantes">Importantes</button>
+        </div>
+        
+        <div id="listaNotas" class="lista-notas"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
