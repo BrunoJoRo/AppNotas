@@ -1,6 +1,6 @@
 {
   "name": "AppNotas",
-  "Short_name": "Notas",
+  "short_name": "Notas",
   "description": "Aplicativo  para controle de notas",
   "start_url": "https://brunojoro.github.io/AppNotas/",
   "background_color": "#ffffff",
