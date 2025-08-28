@@ -30,7 +30,7 @@ header {
 }
 
 header h1 {
-    color: #2c3e50;
+    color: hsl(210, 29%, 24%);
     margin-bottom: 10px;
 }
 
